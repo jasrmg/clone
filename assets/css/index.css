@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/*variables*/
+:root {
+  /*1 lightest*/
+  --color-1: #fff;
+  --color-2: #dadbf1;
+  --color-3: #4c5fd5;
+  --color-4: #000;
+}
+
+.header {
+  background: var(--color-4);
+  display: flex;
+  justify-content: space-between;
+  height: 5vw;
+  padding: 45px 100px;
+}
+.group {
+  display: flex;
+  align-items: center;
+}
+.group img:hover {
+  opacity: .75;
+  cursor: pointer;
+  transition: all .2s linear;
+} 
+.group p {
+  font-size: 25px;
+  border-left: 2px solid var(--color-1);
+  padding-left: 15px;
+}
+.group a {
+  color: var(--color-1);
+  text-decoration: none;
+}
+.group a:hover {
+  text-decoration: underline;
+}
+.group button {
+  margin: 10px;
+}
+/*submit a request button*/
+#submit {
+  background: #191a1b;
+  border: 1px solid var(--color-1);
+  color: var(--color-1);
+  padding: 10px 30px;
+}
+/*sign in*/
+#signin {
+  background: var(--color-3);
+  border: none;
+  color: var(--color-1);
+  padding: 10px 35px;
+}
+#submit, #signin {
+  border-radius: 5px;
+  font-size: 23px;
+}
+#submit, #signin:hover {
+  cursor: pointer;
+}
+#signin:hover {
+  background: var(--color-1);
+  color: var(--color-4);
+  transition: all .2s linear;
+}
+.header img {
+  padding-right: 15px;
+  width: 10vw;
+  height: 2.5vw;
+}
+/*how section*/
+.how-section {
+  background: #dadbf1;
+  height: 54vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.how-section p {
+  margin: 0;
+  padding: 0;
+  font-size: 78px;
+}
+.search-bar {
+  position: relative;
+  display: inline-block;
+}
+.search-bar input[type='text'] {
+  width: 50vw;
+  font-size: 20px;
+  padding: 20px 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: .9px solid var(--color-4);
+  box-shadow: 0 8px rgba(0, 0, 0, 0.03);
+}
+/*arrow*/
+.search-bar i {
+  position: absolute;
+  right: 10px;
+  top: 65%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+}
+.search-bar input[type='text']:hover {
+  color: var(--color-3);
+  border-color: var(--color-3);
+  transition: all .3s;
+}
+.search-bar input[type='text']:focus {
+  border-color: var(--color-3);
+  outline: none;
+}
+.search-bar:hover {
+  color: var(--color-3);
+  transition: all .2s;
+}
+
+/*category*/
+.last-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 145.925px;
+  margin-right: 145.925px;
+  margin-top: 42px;
+  /* padding: 170px; */
+  margin-bottom: 64px;
+}
+.category {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  margin-bottom: 48px;
+  padding-left: 15px;
+
+  margin-top: 50px;
+}
+.category img {
+  width: 6vw;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+}
+.info-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: .2px;
+  margin-top: 45px;
+  width: 441.375;
+}
+.definition {
+  font-size: 24px;
+  margin-bottom: 20px;
+  width: 441.38px;
+}
+.details a {
+  text-decoration: none;
+  color: var(--color-3);
+  font-size: 20px;
+}
+.details a:hover {
+  text-decoration: underline;
+}
+/*footer*/
+.footer {
+  height: 50vh;
+  background: var(--color-4);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 60px 30px;
+  padding-right: 330px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-1);
+}
+
+.column .main {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.add {
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+.main2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.copyright {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  padding-right: 100px;
+}
+
+.copyright img {
+  width: 35px;
+  height: 35px;
+  color: var(--color-1);
+  margin-bottom: 20px;
+}
+.copyright .copyright_text {
+  line-height: 30px;
+  color: var(--color-1);
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+/*hover footer*/
+.column a:hover {
+  text-decoration: underline;
+}
